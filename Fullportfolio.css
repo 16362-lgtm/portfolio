@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Galaxy Portfolio</title>
+    <style>
+        /* สไตล์พื้นหลังโทนกาแล็กซี */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Mitr';
+            background: radial-gradient(circle at center, #1b1464 0%, #0c0826 50%, #02010a 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; /* เลื่อนหน้าจอแบบนุ่มนวลเวลาคลิกเมนู */
+        }
+
+        /* แถบเมนูด้านบน (Navigation Bar) */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(12, 8, 38, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        /* เอฟเฟกต์ชี้เมาส์ที่เมนู */
+        nav a:hover {
+            color: #00d2ff;
+            text-shadow: 0 0 10px #00d2ff, 0 0 20px #00d2ff;
+        }
+
+        /* จัดการกล่องเนื้อหาแต่ละส่วน */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 20px 40px 20px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 210, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(0, 210, 255, 0.2);
+        }
+
+        h2 {
+            color: #00d2ff;
+            border-bottom: 2px solid rgba(0, 210, 255, 0.3);
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
+        }
+
+        p, li {
+            line-height: 1.6;
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* สไตล์ปุ่มลิงก์ติดต่อ */
+        .contact-link {
+            display: inline-block;
+            color: #ffffff;
+            background: linear-gradient(45deg, #8a2be2, #00d2ff);
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">ประวัติส่วนตัว</a>
+        <a href="#education">ประวัติการศึกษา</a>
+        <a href="#works">ผลงานและกิจกรรม</a>
+        <a href="#skills">ความสามารถและทักษะ</a>
+        <a href="#awards">เกียรติบัตรและรางวัล</a>
+        <a href="#contact">ช่องทางการติดต่อ</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>1. ประวัติส่วนตัว</h2>
+            <p><strong>ชื่อ-นามสกุล:</strong> [ใส่ชื่อของคุณที่นี่]</p>
+            <p><strong>ชื่อเล่น:</strong> [ใส่ชื่อเล่น]</p>
+            <p><strong>วันเกิด:</strong> [ใส่วันเกิด]</p>
+            <p><strong>แนะนำตัวเองสั้นๆ:</strong> ยินดีต้อนรับสู่พื้นที่กาแล็กซีของฉัน ที่นี่คือหน้ารวบรวมข้อมูลและความเป็นตัวตนของฉันครับ/ค่ะ</p>
+        </section>
+
+        <section id="education">
+            <h2>2. ประวัติการศึกษา</h2>
+            <ul>
+                <li><strong>มัธยมศึกษาตอนปลาย:</strong> โรงเรียน...... (ปี พ.ศ. .... - ....)</li>
+                <li><strong>มัธยมศึกษาตอนต้น:</strong> โรงเรียน...... (ปี พ.ศ. .... - ....)</li>
+                <li><strong>ประถมศึกษา:</strong> โรงเรียน...... (ปี พ.ศ. .... - ....)</li>
+            </ul>
+        </section>
+
+        <section id="works">
+            <h2>3. ผลงานและกิจกรรม</h2>
+            <ul>
+                <li><strong>กิจกรรมที่ 1:</strong> เข้าร่วมกิจกรรม...... เมื่อวันที่ ......</li>
+                <li><strong>กิจกรรมที่ 2:</strong> เป็นตัวแทนทำกิจกรรม...... ของโรงเรียน</li>
+                <li><strong>ผลงานสร้างสรรค์:</strong> พัฒนาโปรเจกต์ / จัดทำโครงงานเรื่อง......</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>4. ความสามารถและทักษะ</h2>
+            <p><strong>ทักษะด้านคอมพิวเตอร์ / เทคโนโลยี:</strong> HTML, CSS, การตัดต่อวิดีโอ, การใช้โปรแกรมคอมพิวเตอร์พื้นฐาน</p>
+            <p><strong>ทักษะด้านภาษา:</strong> ภาษาไทย (ดีเยี่ยม), ภาษาอังกฤษ (ระดับสื่อสารได้)</p>
+            <p><strong>ทักษะอื่นๆ:</strong> การทำงานเป็นทีม, การแก้ไขปัญหาเฉพาะหน้า</p>
+        </section>
+
+        <section id="awards">
+            <h2>5. เกียรติบัตรและรางวัล</h2>
+            <ul>
+                <li><strong>รางวัลระดับโรงเรียน:</strong> รางวัลชนะเลิศการแข่งขัน...... ปี พ.ศ. 2568</li>
+                <li><strong>เกียรติบัตรออนไลน์:</strong> ผ่านการอบรมหลักสูตร...... จากสถาบัน......</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>6. ช่องทางการติดต่อ</h2>
+            <p>สามารถติดตามหรือติดต่อฉันได้ผ่านช่องทางด้านล่างนี้เลยครับ/ค่ะ:</p>
+            <div style="margin-top: 15px;">
+                <a href="#" target="_blank" class="contact-link">Facebook</a>
+                <a href="#" target="_blank" class="contact-link">Instagram</a>
+                <a href="mailto:your-email@example.com" class="contact-link">Email</a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
