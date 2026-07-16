@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Portfolio</title>
+    <title>Engineering Portfolio - Crimson Edition</title>
     <style>
-        /* สไตล์พื้นหลังโทนวิศวกรรม (น้ำเงินเข้มอุตสาหกรรม) */
+        /* สไตล์พื้นหลังโทนสีเลือดหมูเข้มสไตล์วิศวะ */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Mitr';
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #2d0b0e 0%, #1a0507 100%);
             color: #ffffff;
             margin: 0;
             padding: 0;
@@ -20,12 +20,12 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(15, 23, 42, 0.9);
+            background: rgba(45, 11, 14, 0.9);
             backdrop-filter: blur(8px);
             padding: 15px 0;
             text-align: center;
             z-index: 1000;
-            border-bottom: 2px solid #f97316; /* เส้นใต้เมนูสีส้มวิศวะ */
+            border-bottom: 2px solid #a31d1d; /* เส้นใต้เมนูสีแดงวิศวะสว่าง */
         }
 
         nav a {
@@ -38,10 +38,10 @@
             transition: 0.3s;
         }
 
-        /* เอฟเฟกต์ชี้เมาส์ที่เมนู (เปลี่ยนเป็นสีส้มเทคนิค) */
+        /* เอฟเฟกต์ชี้เมาส์ที่เมนู */
         nav a:hover {
-            color: #f97316;
-            text-shadow: 0 0 8px rgba(249, 115, 22, 0.6);
+            color: #ff4d4d;
+            text-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
         }
 
         /* จัดการกล่องเนื้อหาแต่ละส่วน */
@@ -52,14 +52,46 @@
         }
 
         section {
-            background: rgba(30, 41, 59, 0.7);
-            border-left: 4px solid #f97316; /* เส้นขอบหนาด้านซ้ายสไตล์โครงสร้าง */
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(58, 16, 20, 0.6);
+            border-left: 4px solid #a31d1d; /* เส้นเน้นหนาด้านซ้ายสีเลือดหมูสว่าง */
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 0 12px 12px 0;
             padding: 30px;
             margin-bottom: 35px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease;
         }
+
+        section:hover {
+            transform: translateX(5px);
+            background: rgba(58, 16, 20, 0.85);
+            border-left-color: #ff4d4d; /* เปลี่ยนเป็นสีแดงสว่างขึ้นเมื่อชี้ */
+            box-shadow: 0 4px 25px rgba(163, 29, 29, 0.3);
+        }
+
+        h2 {
+            color: #ffb3b3; /* สีแดงอ่อน/ชมพูพาสเทลเพื่อให้อ่านง่ายบนพื้นเข้ม */
+            margin-top: 0;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        p, li {
+            line-height: 1.7;
+            font-size: 16px;
+            color: #f0e6e6; /* สีขาวนวลถนอมสายตา */
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: square; /* หัวข้อสี่เหลี่ยมสไตล์โครงสร้าง */
+        }
+
+        /* ปุ่มลิงก์ติดต่อสไตล์ป้ายวิศวะ */
+        .contact-link {
+            display: inline-block;
+            color: #ffffff;
+            background: #a31d1d;
+            border: 1px
