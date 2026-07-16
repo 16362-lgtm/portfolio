@@ -186,3 +186,203 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Engineering Portfolio</title>
+    <style>
+        /* สไตล์พื้นหลังโทนสีเลือดหมูเข้มสไตล์วิศวะ */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Mitr';
+            background: linear-gradient(135deg, #2d0b0e 0%, #1a0507 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* แถบเมนูด้านบน (Navigation Bar) */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(45, 11, 14, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 2px solid #a31d1d;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+            text-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
+        }
+
+        /* ส่วนหน้าปก (Hero Section / Cover) */
+        .hero-banner {
+            position: relative;
+            height: 50vh; 
+            min-height: 350px;
+            background: linear-gradient(rgba(26, 5, 7, 0.6), rgba(26, 5, 7, 0.85)), 
+                        url('http://googleusercontent.com/image_generation_content/0') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 50px; 
+            border-bottom: 4px solid #a31d1d;
+        }
+
+        .hero-banner h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+            letter-spacing: 1px;
+        }
+
+        .hero-banner p {
+            font-size: 1.4rem;
+            margin: 0 0 25px 0;
+            color: #ffb3b3;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        }
+
+        /* จัดการกล่องเนื้อหา */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: rgba(58, 16, 20, 0.6);
+            border-left: 4px solid #a31d1d;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 0 12px 12px 0;
+            padding: 40px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+            background: rgba(58, 16, 20, 0.85);
+            border-left-color: #ff4d4d;
+            box-shadow: 0 4px 25px rgba(163, 29, 29, 0.3);
+        }
+
+        h2 {
+            color: #ffb3b3;
+            margin-top: 0;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid rgba(255, 179, 179, 0.2);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .profile-item {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #f0e6e6;
+        }
+
+        .profile-item strong {
+            color: #ffb3b3;
+            display: inline-block;
+            width: 140px; /* จัดความกว้างหัวข้อให้ตรงกัน */
+        }
+
+        /* ปุ่มลิงก์โซเชียล */
+        .social-container {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-link {
+            display: inline-block;
+            color: #ffffff;
+            background: #a31d1d;
+            border: 1px solid #7a1111;
+            padding: 10px 24px;
+            margin: 5px 10px 5px 0;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .contact-link:hover {
+            background: #ff4d4d;
+            border-color: #a31d1d;
+            box-shadow: 0 0 12px rgba(255, 77, 77, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">หน้าแรก</a>
+        <a href="https://example.com/portfolio" target="_blank">ดูผลงานอื่นๆ</a>
+    </nav>
+
+    <header class="hero-banner">
+        <h1>ABOUT ME</h1>
+        <p>ประวัติส่วนตัวและช่องทางการติดต่อ</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>■ ข้อมูลส่วนตัว (Personal Info)</h2>
+            
+            <div class="profile-grid">
+                <div class="profile-item"><strong>ชื่อ-นามสกุล:</strong> [นาย ศรัทธา โยชะนา]</div>
+                <div class="profile-item"><strong>ชื่อเล่น:</strong> [ด็อท]</div>
+                <div class="profile-item"><strong>วันเกิด:</strong> [2 เมษายน พ.ศ.2551]</div>
+                <div class="profile-item"><strong>อายุ:</strong> [18] ปี</div>
+                <div class="profile-item"><strong>สัญชาติ:</strong> ไทย</div>
+                <div class="profile-item"><strong>แผนการเรียน:</strong> [เช่น วิทยาศาสตร์-เทคโนโลยี]</div>
+                <div class="profile-item"><strong>ความสนใจ:</strong> [ วิศวกรรมคอมพิวเตอร์, หุ่นยนต์, เทคโนโลยี]</div>
+                <div class="profile-item"><strong>คติพจน์ประจำใจ:</strong> [สอยอย่างเสียวไม่เสียวค่อยว่ากัน]</div>
+            </div>
+
+            <div class="social-container">
+                <p style="margin-top: 0; margin-bottom: 15px; font-weight: bold; color: #ffb3b3;">ช่องทางการติดต่อ:</p>
+                <a href="https://www.facebook.com/" target="_blank" class="contact-link">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" class="contact-link">Instagram</a>
+                <a href="mailto:your-email@example.com" class="contact-link">Email</a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
